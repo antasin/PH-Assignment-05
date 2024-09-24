@@ -12,44 +12,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="m-0 p-0">
-    <header id="nav-head" class="bg-purple-200 h-24">
+    <header id="nav-head" class="bg-purple-200 h-24 lg:h-36 py-6">
       <nav id="nav-container" class="p-7">
         <ul class="flex justify-around">
           <button
-            class="btn bg-lime-400 h-2 w-16 text-sm lg:h-4 lg:w-24 lg:text-xl"
+            class="btn bg-lime-400 h-4 w-16 text-sm lg:h-16 lg:w-28 lg:text-xl"
           >
             <b>Blog</b>
           </button>
-          <div class="flex">
+          <div class="lg:flex">
             <img class="h-10 w-10" src="images/logo.png" alt="" />
-            <h1 class="text-xl ml-4"><b>Donate Bangladesh</b></h1>
+            <h1 class="text-2xl ml-4"><b>Donate Bangladesh</b></h1>
           </div>
-          <div class="flex justify-between">
-            <img src="images/coin.png" alt="" />
+          <div class="flex justify-between gap-0">
+            <img class="lg:h-12 lg:12" src="images/coin.png" alt="" />
             <input
-              class="text-zinc-950 h-5 w-24 text-center m-auto ml-4 bg-purple-200"
-              type="number"
-              placeholder="1000 BDT"
+              class="h-12 w-36 text-center m-auto ml-4 bg-purple-200 text-xl text-gray-950"
+              type="text"
+              placeholder="50,000 BDT"
             />
           </div>
         </ul>
       </nav>
     </header>
     <main class="m-0 p-0">
-      <section id="flood-container" class="mt-20 lg:px-36 lg:py-16">
+      <section id="flood-container" class="mt-20 lg:px-56 lg:py-16">
         <!-- donation and history button -->
         <div
           id="donation-history-container"
           class="lg:flex justify-center lg:gap-6 border-2 border-yellow-300"
         >
-          <button class="btn bg-lime-400 h-12 w-36 text-xl">Donation</button>
-          <button class="btn bg-lime-400 h-12 w-36 text-xl">History</button>
+          <button class="btn bg-lime-400 h-16 w-44 text-xl">Donation</button>
+          <button class="btn bg-lime-400 h-16 w-44 text-xl">History</button>
         </div>
         <!-- card-1 start & flex-->
 
         <div
           id="card-1-parent-container"
-          class="lg:flex gap-11 border-2 border-b-slate-400 shadow-xl shadow-purple-300 p-6 lg:p-10 rounded-3xl mt-6 lg:p-8"
+          class="lg:flex gap-11 border-2 border-b-slate-400 shadow-xl shadow-purple-300 p-6 lg:p-8 rounded-3xl mt-6 mx-auto lg:[453px] lg:w-[1140px]"
         >
           <!-- card-1 image div -->
           <div class="h-auto w-auto bg-slate-600 rounded-xl">
@@ -65,19 +65,21 @@
             class="h-full w-full border-2 border-red-700"
           >
             <!-- coin flex -->
-            <div class="flex bg-purple-200 h-9 w-24 rounded-xl border-blue-700">
+            <div
+              class="flex bg-purple-200 h-12 w-40 rounded-xl border-blue-700"
+            >
               <img src="images/coin.png" alt="" />
               <input
-                class="text-zinc-950 h-9 w-24 text-center m-auto ml-2 bg-purple-200 rounded-md"
-                type="number"
-                placeholder="1000 BDT"
+                class="text-zinc-950 h-full w-full text-base lg:text-xl text-center m-auto ml-2 bg-purple-200 rounded-md"
+                type="text"
+                placeholder="0 BDT"
               />
             </div>
 
             <h1 class="mt-2 lg:text-2xl mb-3">
               <b>Donate for Flood of Noakhali,Bangladesh</b>
             </h1>
-            <p class="text-base">
+            <p class="text-lg">
               Bangladesh is currently facing a devastating flood crisis, and the
               district of Noakhali has been hit particularly hard. Thousands of
               people have lost their homes, livelihoods, and all sense of
@@ -97,39 +99,41 @@
           </div>
         </div>
         <!-- card-1 end -->
-        <!-- card-1 start & flex-->
+        <!-- card-2 start & flex-->
 
         <div
           id="card-1-parent-container"
-          class="lg:flex gap-11 border-2 border-b-slate-400 shadow-xl shadow-purple-300 p-6 lg:p-10 rounded-3xl mt-6 lg:p-8"
+          class="lg:flex gap-11 border-2 border-b-slate-400 shadow-xl shadow-purple-300 p-6 lg:p-8 rounded-3xl mt-6 mx-auto lg:[453px] lg:w-[1140px]"
         >
-          <!-- card-1 image div -->
+          <!-- card-2 image div -->
           <div class="h-auto w-auto bg-slate-600 rounded-xl">
             <img
               class="h-full w-full mb-5 rounded-lg rounded-xl"
-              src="images/noakhali.png"
+              src="images/feni.png"
               alt=""
             />
           </div>
-          <!-- card-1 Element div-->
+          <!-- card-2 Element div-->
           <div
             id="card-1-element"
             class="h-full w-full border-2 border-red-700"
           >
             <!-- coin flex -->
-            <div class="flex bg-purple-200 h-9 w-24 rounded-xl border-blue-700">
+            <div
+              class="flex bg-purple-200 h-12 w-40 rounded-xl border-blue-700 text-base lg:text-xl"
+            >
               <img src="images/coin.png" alt="" />
               <input
-                class="text-zinc-950 h-9 w-24 text-center m-auto ml-2 bg-purple-200 rounded-md"
-                type="number"
-                placeholder="1000 BDT"
+                class="text-zinc-950 h-full w-full text-center m-auto ml-2 bg-purple-200 rounded-md"
+                type="text"
+                placeholder="0 BDT"
               />
             </div>
 
             <h1 class="mt-2 lg:text-2xl mb-3">
-              <b>Donate for Flood of Noakhali,Bangladesh</b>
+              <b>Donate for Flood Relief in Feni,Bangladesh</b>
             </h1>
-            <p class="text-base">
+            <p class="text-lg">
               Bangladesh is currently facing a devastating flood crisis, and the
               district of Noakhali has been hit particularly hard. Thousands of
               people have lost their homes, livelihoods, and all sense of
@@ -148,40 +152,42 @@
             </button>
           </div>
         </div>
-        <!-- card-1 end -->
-        <!-- card-1 start & flex-->
+        <!-- card-2 end -->
+        <!-- card-3 start & flex-->
 
         <div
           id="card-1-parent-container"
-          class="lg:flex gap-11 border-2 border-b-slate-400 shadow-xl shadow-purple-300 p-6 lg:p-10 rounded-3xl mt-6 lg:p-8"
+          class="lg:flex gap-11 border-2 border-b-slate-400 shadow-xl shadow-purple-300 p-6 lg:p-8 rounded-3xl mt-6 mx-auto lg:[453px] lg:w-[1140px]"
         >
-          <!-- card-1 image div -->
+          <!-- card-3 image div -->
           <div class="h-auto w-auto bg-slate-600 rounded-xl">
             <img
               class="h-full w-full mb-5 rounded-lg rounded-xl"
-              src="images/noakhali.png"
+              src="images/quota-protest.png"
               alt=""
             />
           </div>
-          <!-- card-1 Element div-->
+          <!-- card-3 Element div-->
           <div
             id="card-1-element"
             class="h-full w-full border-2 border-red-700"
           >
             <!-- coin flex -->
-            <div class="flex bg-purple-200 h-9 w-24 rounded-xl border-blue-700">
+            <div
+              class="flex bg-purple-200 h-12 w-40 rounded-xl border-blue-700"
+            >
               <img src="images/coin.png" alt="" />
               <input
-                class="text-zinc-950 h-9 w-24 text-center m-auto ml-2 bg-purple-200 rounded-md"
-                type="number"
-                placeholder="1000 BDT"
+                class="text-zinc-950 h-full w-full text-base lg:text-xl text-center m-auto ml-2 bg-purple-200 rounded-xl"
+                type=" text"
+                placeholder="0 BDT"
               />
             </div>
 
             <h1 class="mt-2 lg:text-2xl mb-3">
-              <b>Donate for Flood of Noakhali,Bangladesh</b>
+              <b>Aid for Injured in the Quota Movement</b>
             </h1>
-            <p class="text-base">
+            <p class="text-lg">
               Bangladesh is currently facing a devastating flood crisis, and the
               district of Noakhali has been hit particularly hard. Thousands of
               people have lost their homes, livelihoods, and all sense of
@@ -200,40 +206,44 @@
             </button>
           </div>
         </div>
-        <!-- card-1 end -->
-        <!-- card-1 start & flex-->
+        <!-- card-3 end -->
+        <!-- card-4 start & flex-->
 
         <div
           id="card-1-parent-container"
-          class="lg:flex gap-11 border-2 border-b-slate-400 shadow-xl shadow-purple-300 p-6 lg:p-10 rounded-3xl mt-6 lg:p-8"
+          class="lg:flex gap-11 border-2 border-b-slate-400 shadow-xl shadow-purple-300 p-6 lg:p-8 rounded-3xl mt-6 mx-auto lg:[453px] lg:w-[1140px]"
         >
-          <!-- card-1 image div -->
-          <div class="h-auto w-auto bg-slate-600 rounded-xl">
+          <!-- card-4 image div -->
+          <div
+            class="h-auto w-auto lg:-[524px] lg:w-[468px] bg-slate-600 rounded-xl"
+          >
             <img
               class="h-full w-full mb-5 rounded-lg rounded-xl"
-              src="images/noakhali.png"
+              src="images/after_flood.jpeg"
               alt=""
             />
           </div>
-          <!-- card-1 Element div-->
+          <!-- card-4 Element div-->
           <div
             id="card-1-element"
             class="h-full w-full border-2 border-red-700"
           >
             <!-- coin flex -->
-            <div class="flex bg-purple-200 h-9 w-24 rounded-xl border-blue-700">
+            <div
+              class="flex bg-purple-200 h-12 w-40 rounded-xl border-blue-700"
+            >
               <img src="images/coin.png" alt="" />
               <input
-                class="text-zinc-950 h-9 w-24 text-center m-auto ml-2 bg-purple-200 rounded-md"
-                type="number"
-                placeholder="1000 BDT"
+                class="text-zinc-950 h-full w-full text-base lg:text-xl text-center m-auto ml-2 bg-purple-200 rounded-xl"
+                type="text"
+                placeholder="0 BDT"
               />
             </div>
 
             <h1 class="mt-2 lg:text-2xl mb-3">
-              <b>Donate for Flood of Noakhali,Bangladesh</b>
+              <b>First Steps After A Flood - City of Fort Wayne</b>
             </h1>
-            <p class="text-base">
+            <p class="text-lg">
               Bangladesh is currently facing a devastating flood crisis, and the
               district of Noakhali has been hit particularly hard. Thousands of
               people have lost their homes, livelihoods, and all sense of
@@ -252,7 +262,7 @@
             </button>
           </div>
         </div>
-        <!-- card-1 end -->
+        <!-- card-4 end -->
       </section>
     </main>
 

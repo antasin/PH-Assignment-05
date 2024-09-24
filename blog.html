@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog DOM</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="m-0 p-0">
+      <div class="p-16">
+        <div
+          class="overflow-auto mx-auto bg-yellow-100 h-32 w-[666px] mb-8 border-2 border-blue-200 p-4"
+        >
+          <h1><b>1. What is the Document Object Model (DOM)?</b></h1>
+          <hr />
+          <p class="overflow-auto">
+            The Document Object Model (DOM) is a programming interface for web
+            documents. It represents the structure of a webpage as a tree of
+            objects, allowing programming languages (like JavaScript) to
+            interact with the content, structure, and style of a web page.
+          </p>
+          <li>
+            Key Features of the DOM: Tree Structure: The DOM organizes the
+            document into a tree of nodes. For example, an HTML element like is
+            represented as an element node, and its text content is represented
+            as a text node. The relationships between elements, such as
+            parent-child relationships, are preserved in the tree structure.
+            Dynamic Interaction: The DOM enables developers to dynamically
+            update the content, structure, and style of a webpage without
+            reloading it. JavaScript can be used to modify elements, attributes,
+            and styles, or to handle events like clicks and keypresses.
+            Standardized API: The DOM provides standardized methods and
+            properties for accessing and manipulating web documents. This
+            includes methods like getElementById(), querySelector(), and
+            addEventListener() to select and interact with elements, as well as
+            properties like innerHTML and style.
+          </li>
+        </div>
+        <div
+          class="overflow-auto mx-auto h-32 w-[666px] mb-8 bg-yellow-100 border-2 border-blue-200 p-4"
+        >
+          <h1><b>2. How do you select an element from the DOM?</b></h1>
+          <hr />
+          <p>
+            <li>By ID: document.getElementById()</li>
+            <li>By class: document.getElementsByClassName()</li>
+            <li>By tag: document.getElementsByTagName()</li>
+            <li>
+              By CSS selector: document.querySelector() and
+              document.querySelectorAll()
+            </li>
+
+            <li>By name: document.getElementsByName()</li>
+          </p>
+        </div>
+        <div
+          class="overflow-auto mx-auto h-32 w-[666px] mb-8 bg-yellow-100 border-2 border-blue-200 p-4"
+        >
+          <h1>
+            <b
+              >3. What is event delegation in the context of the DOM, and why is
+              it useful?</b
+            >
+          </h1>
+          <hr />
+          <p>
+            Event delegation is a technique in JavaScript that allows you to
+            handle events at a higher level in the DOM tree rather than
+            attaching event listeners to individual child elements. It leverages
+            the concept of event bubbling, where events triggered on a child
+            element propagate (or "bubble up") through its ancestors in the DOM
+            tree, allowing a parent element to listen for events on its
+            children.
+          </p>
+          <li>
+            Improved Performance: Instead of attaching separate event listeners
+            to every child element (which can be inefficient if you have many
+            elements), you attach just one listener to the parent element. This
+            reduces memory usage and improves performance, especially when
+            dealing with a large number of child elements.
+          </li>
+          <li>
+            Handles Dynamically Added Elements: Event delegation is particularly
+            useful when new child elements are added dynamically after the event
+            listener is already set. Without delegation, you'd need to add new
+            event listeners manually to every new element. With event
+            delegation, the parent listener will automatically catch events from
+            newly added children.
+          </li>
+          <li>
+            Simplified Code: It simplifies event handling code by allowing you
+            to manage events in a single location (the parent), rather than
+            setting up multiple listeners on each child element.
+          </li>
+        </div>
+        <div
+          class="overflow-auto mx-auto h-32 w-[666px] bg-yellow-100 border-2 border-blue-200 p-4"
+        >
+          <h1>
+            <b
+              >4. How do you manipulate an element's attributes and styles using
+              the DOM?</b
+            >
+          </h1>
+          <hr />
+          <p>
+            If you want to change other attributes like id , href , or src , you
+            can use the setAttribute() method. The setAttribute() method accepts
+            two arguments: The name of the attribute to set. The value of the
+            attribute to set.
+          </p>
+          <li>
+            1. Manipulating Attributes To manipulate an element's attributes
+            (like src, href, id, etc.), you can use the following methods: a.
+            Get an Attribute (getAttribute) Retrieve the value of an attribute
+            from an element.
+          </li>
+          <li>
+            b. Set or Change an Attribute (setAttribute) Set a new value for an
+            attribute or update an existing one.
+          </li>
+          <li>
+            c. Remove an Attribute (removeAttribute) Remove an attribute from an
+            element.
+          </li>
+        </div>
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
