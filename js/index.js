@@ -149,3 +149,10 @@ document
     console.log("popup button clicked");
     document.getElementById("popup").classList.remove("hidden");
   });
+//donation button//
+document
+  .getElementById("donation-button")
+  .addEventListener("click", function () {
+    document.getElementById("card-container-btn").classList.remove("hidden");
+    document.getElementById("history-button");
+  });
