@@ -1,3 +1,9 @@
+//blog -btn  event handler//
+document.getElementById("blog-btn").addEventListener("click", function () {
+  console.log("welcome to blog page");
+  window.location.href = "/blog.html";
+});
+
 //first card//
 document
   .getElementById("first-donate-now-btn")
@@ -135,8 +141,11 @@ document
     console.log(newglobalAmount);
     document.getElementById("fourth-donation-input").value = "";
   });
-//blog event handler//
-document.getElementById("blog-btn").addEventListener("click", function () {
-  console.log("welcome to blog page");
-  window.location.href = "/blog.html";
-});
+
+//popup//
+document
+  .getElementById("first-donate-now-btn")
+  .addEventListener("click", function () {
+    console.log("popup button clicked");
+    document.getElementById("popup").classList.remove("hidden");
+  });
