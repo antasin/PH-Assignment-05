@@ -1,14 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History Donation</title>
-    <div>
-        
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation History</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav
+      id="nav-container"
+      class="p-1 lg:p-4 sticky top-0 bg-purple-200 h-24 lg:h-36 py-6 sticky top-0"
+    >
+      <ul class="flex justify-between gap-3">
+        <button
+          id="blog-btn"
+          class="btn bg-lime-400 h-4 w-16 text-sm lg:h-16 lg:w-28 lg:text-xl"
+        >
+          <b>Home</b>
+        </button>
+        <div class="flex flex-col lg:flex-row items-center">
+          <img class="h-10 w-10" src="images/logo.png" alt="" />
+          <h1 class="text-2xl ml-4"><b>Donate Bangladesh</b></h1>
+        </div>
+        <div class="flex gap-1 justify-center items-center">
+          <img class="lg:h-12 lg:12" src="images/coin.png" alt="" />
+          <input
+            id="global-amount"
+            class="text-xl text-gray-950"
+            type="text"
+            placeholder=""
+            value="100000 BDT"
+            readonly
+          />
+        </div>
+      </ul>
+    </nav>
+    <div
+      id="donation-history-container"
+      class="flex justify-center items-center gap-3"
+    >
+      <button
+        id="donation-button"
+        class="btn bg-lime-400 lg:h-16 lg:w-44 text-xl"
+      >
+        Donation
+      </button>
+      <button
+        id="history-button"
+        class="btn bg-lime-400 lg:h-16 lg:w-44 text-xl"
+      >
+        History
+      </button>
     </div>
-</head>
-<body>
-    
-</body>
+    <div class="border-2 border-b-slate-500 mt-12 h-32 w-[520px] p-8 mx-auto">
+      <h1 class="text-lg">
+        1000 Taka is Donated for famine-2024 at feni,Bangladesh
+      </h1>
+      <p class="text-gray-600">
+        Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+      </p>
+    </div>
+    <div class="border-2 border-b-slate-500 mt-12 h-32 w-[520px] p-8 mx-auto">
+      <h1 class="text-lg">
+        1000 Taka is Donated for famine-2024 at feni,Bangladesh
+      </h1>
+      <p class="text-gray-600">
+        Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+      </p>
+    </div>
+    <div class="border-2 border-b-slate-500 mt-12 h-32 w-[520px] p-8 mx-auto">
+      <h1 class="text-lg">
+        1000 Taka is Donated for famine-2024 at feni,Bangladesh
+      </h1>
+      <p class="text-gray-600">
+        Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+      </p>
+    </div>
+    <div class="border-2 border-b-slate-500 mt-12 h-32 w-[520px] p-8 mx-auto">
+      <h1 class="text-lg">
+        1000 Taka is Donated for famine-2024 at feni,Bangladesh
+      </h1>
+      <p class="text-gray-600">
+        Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+      </p>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
 </html>

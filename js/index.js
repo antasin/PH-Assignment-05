@@ -3,7 +3,11 @@ document.getElementById("blog-btn").addEventListener("click", function () {
   console.log("welcome to blog page");
   window.location.href = "./blog.html";
 });
-
+//history button//
+document.getElementById("blog-btn").addEventListener("click", function () {
+  console.log("welcome to blog page");
+  window.location.href = "./blog.html";
+});
 //first card//
 document
   .getElementById("first-donate-now-btn")
@@ -181,3 +185,4 @@ document
 
     document.getElementById("close-popup").classList.remove("hidden");
   });
+
