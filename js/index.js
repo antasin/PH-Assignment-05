@@ -1,6 +1,4 @@
-//first card donate
-//add money
-//-----------------------------------------first card-----------------------------//
+//first card//
 document
   .getElementById("first-donate-now-btn")
   .addEventListener("click", function (event) {
@@ -33,7 +31,7 @@ document
     console.log(newglobalAmount);
     document.getElementById("first-donation-input").value = "";
   });
-//--------------------------------------------Second card----------------------------------------//
+//Second card//
 
 document
   .getElementById("second-donate-now-btn")
@@ -68,9 +66,9 @@ document
     document.getElementById("global-amount").value = newglobalAmount;
     console.log(newglobalAmount);
     document.getElementById("second-donation-input").value = "";
-  });
-//---------------------------------------------Third card-----------------------------------------------//
+  }); //
 document
+  //Third card//
   .getElementById("third-donate-now-btn")
   .addEventListener("click", function (event) {
     event.preventDefault();
@@ -102,7 +100,7 @@ document
     console.log(newglobalAmount);
     document.getElementById("third-donation-input").value = "";
   });
-//-------------------------------------fourth card---------------------------------------//
+//fourth card//
 document
   .getElementById("fourth-donate-now-btn")
   .addEventListener("click", function (event) {
@@ -137,3 +135,8 @@ document
     console.log(newglobalAmount);
     document.getElementById("fourth-donation-input").value = "";
   });
+//blog event handler//
+document.getElementById("blog-btn").addEventListener("click", function () {
+  console.log("welcome to blog page");
+  window.location.href = "/blog.html";
+});
