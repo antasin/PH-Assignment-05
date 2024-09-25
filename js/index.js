@@ -1,7 +1,7 @@
 //blog -btn  event handler//
 document.getElementById("blog-btn").addEventListener("click", function () {
   console.log("welcome to blog page");
-  window.location.href = "/blog.html";
+  window.location.href = "./blog.html";
 });
 
 //first card//
@@ -142,9 +142,33 @@ document
     document.getElementById("fourth-donation-input").value = "";
   });
 
-//popup//
+//popup card-1//
 document
   .getElementById("first-donate-now-btn")
+  .addEventListener("click", function () {
+    console.log("popup button clicked");
+    document.getElementById("popup").classList.remove("hidden");
+    document.getElementById("close-popup");
+  });
+//popup card-2//
+document
+  .getElementById("second-donate-now-btn")
+  .addEventListener("click", function () {
+    console.log("popup button clicked");
+    document.getElementById("popup").classList.remove("hidden");
+    document.getElementById("close-popup");
+  });
+//popup card-3//
+document
+  .getElementById("third-donate-now-btn")
+  .addEventListener("click", function () {
+    console.log("popup button clicked");
+    document.getElementById("popup").classList.remove("hidden");
+    document.getElementById("close-popup");
+  });
+//popup card-4//
+document
+  .getElementById("fourth-donate-now-btn")
   .addEventListener("click", function () {
     console.log("popup button clicked");
     document.getElementById("popup").classList.remove("hidden");
@@ -154,5 +178,6 @@ document
   .getElementById("donation-button")
   .addEventListener("click", function () {
     document.getElementById("card-container-btn").classList.remove("hidden");
-    document.getElementById("history-button");
+
+    document.getElementById("close-popup").classList.remove("hidden");
   });
